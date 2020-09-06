@@ -16,14 +16,9 @@
 	</view>
 </template>
 <script>
-	import uLink from "@/components/uLink.vue"
 	export default {
-		components: {
-			uLink
-		},
 		data() {
 			return {
-				navigateFlag: false,
 				lists: [{
 						name: "Badge 数字角标",
 						url: "badge"
@@ -173,16 +168,9 @@
 		},
 		methods: {
 			goDetailPage(path) {
-				if (this.navigateFlag) {
-					return;
-				}
-				this.navigateFlag = true;
 				uni.navigateTo({
 					url: '/pages/extUI/' + path + '/' + path
 				});
-				setTimeout(() => {
-					this.navigateFlag = false;
-				}, 200)
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 {
-    "name" : "hello uni-app",
-    "appid" : "",
+    "name" : "JJ_APP",
+    "appid" : "__UNI__7225759",
     "description" : "应用描述",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -74,7 +74,8 @@
             "sdkConfigs" : {
                 "speech" : {
                     "ifly" : {}
-                }
+                },
+                "ad" : {}
             },
             "orientation" : [ "portrait-primary" ]
         }
@@ -134,6 +135,28 @@
         },
         "async" : {
             "timeout" : 20000
+        },
+        "devServer" : {
+            "proxy" : {
+                "/api1" : {
+                    "target" : "http://hq.sinajs.cn",
+                    "pathRewrite" : {
+                        "^/api1" : ""
+                    }
+                },
+                "/api2" : {
+                    "target" : "http://fund.eastmoney.com",
+                    "pathRewrite" : {
+                        "^/api2" : ""
+                    }
+                },
+                "/api3" : {
+                    "target" : "http://fundgz.1234567.com.cn",
+                    "pathRewrite" : {
+                        "^/api3" : ""
+                    }
+                }
+            }
         }
     }
 }

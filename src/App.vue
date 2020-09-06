@@ -41,12 +41,14 @@
 		}
     }
 </script>
-
 <style>
     /* #ifndef APP-PLUS-NVUE */
     /* uni.css - 通用组件、模板样式库，可以当作一套ui库应用 */
     @import './common/uni.css';
-
+    @import './common/common.css';
+	@import './common/theme/theme.css';
+	@import './common/iconfont/iconfont/font.css';
+	@import './common/reset.css';
     /* 以下样式用于 hello uni-app 演示所需 */
     page {
         background-color: #F4F5F6;
@@ -62,7 +64,9 @@
         align-items: center;
         margin-top: 10rpx;
     }
-
+    /* uni-page-head[uni-page-head-type=default]~uni-page-wrapper, .uni-page-body{
+        height: 100% !important;
+    } */
     .uni-header-image {
         width: 100px;
         height: 100px;
@@ -81,15 +85,5 @@
         font-size: 38rpx;
         color: #808080;
     }
-
-    /* #endif*/
-
-    /* #ifdef MP-360 */
-    ::-webkit-scrollbar {width: 4px; height: 4px; background-color: transparent;}
-    ::-webkit-scrollbar-track {background-color: transparent;}
-    ::-webkit-scrollbar-thumb {background-color: #ddd;}
-    ::-webkit-scrollbar-thumb:hover {background-color: #ccc;}
-    ::-webkit-scrollbar-thumb:active {background-color: #bbb;}
-    ::-webkit-scrollbar-corner {background: #ffffff;}
     /* #endif*/
 </style>

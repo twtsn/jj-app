@@ -28,11 +28,9 @@
     </view>
 </template>
 <script>
-    import uLink from '@/components/uLink.vue'
     import setTabBar from '@/components/api-set-tabbar.nvue';
     export default {
         components: {
-            uLink,
             setTabBar
         },
         data() {
@@ -374,8 +372,7 @@
             ];
             return {
                 showSetTabBarPage: false,
-                list: list,
-                navigateFlag: false
+                list: list
             };
         },
         onShareAppMessage() {
@@ -415,10 +412,6 @@
                 }
             },
             goDetailPage(e) {
-                if (this.navigateFlag) {
-                    return;
-                }
-                this.navigateFlag = true;
                 if (e === 'set-tabbar') {
                     this.showSetTabBarPage = true;
                     return;
@@ -429,9 +422,6 @@
                 });
             },
             leaveSetTabBarPage() {
-                setTimeout(() => {
-                    this.navigateFlag = false;
-                }, 200)
                 this.showSetTabBarPage = false;
             }
         }
