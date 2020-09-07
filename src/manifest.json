@@ -1,5 +1,5 @@
 {
-    "name" : "JJ_APP",
+    "name" : "JJ",
     "appid" : "__UNI__7225759",
     "description" : "应用描述",
     "versionName" : "1.0.0",
@@ -100,7 +100,7 @@
     },
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx412e36fa6d8dc559",
         "setting" : {
             "urlCheck" : false
         },

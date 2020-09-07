@@ -106,6 +106,7 @@
 			},
 			clear() {
 				this.searchVal = ""
+				this.$emit("clear");
 			},
 			cancel() {
 				this.$emit("cancel", {

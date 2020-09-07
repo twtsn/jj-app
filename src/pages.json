@@ -8,12 +8,6 @@
 				"app-plus": {
 					"bounce": "vertical",
 					"titleNView": {
-						"buttons": [{
-							"text": "\ue534",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "22px",
-							"color": "#FFFFFF"
-						}]
 					}
 				}
 			}
@@ -27,23 +21,6 @@
 					"bounce": "vertical",
 					"type": "transparent",
 					"titleNView": {
-						"type": "transparent",
-						"titleColor": "#fff",
-						"backgroundColor": "#007AFF",
-						"buttons": [{
-							"fontSrc": "/static/uni.ttf",
-							"text": "\ue537",
-							"width": "40px",
-							"fontSize": "28px",
-							"color": "#fff",
-							"background": "rgba(0,0,0,0)"
-						}],
-						"searchInput": {
-							"backgroundColor": "#fff",
-							"borderRadius": "6px",
-							"placeholder": "请输入名称、编号、类型",
-							"disabled": false
-						}
 					}
 				}
 			}
@@ -55,12 +32,6 @@
 				"app-plus": {
 					"bounce": "vertical",
 					"titleNView": {
-						"buttons": [{
-							"text": "\ue534",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "22px",
-							"color": "#FFFFFF"
-						}]
 					}
 				}
 			}
@@ -1253,29 +1224,29 @@
 				"selectedIconPath": "static/componentHL.png",
 				"text": "自选"
 			}
-			// ,
-			// {
-			// 	"pagePath": "pages/tabBar/component/component",
-			// 	"iconPath": "static/component.png",
-			// 	"selectedIconPath": "static/componentHL.png",
-			// 	"text": "内置组件"
-			// },
-			// {
-			// 	"pagePath": "pages/tabBar/API/API",
-			// 	"iconPath": "static/api.png",
-			// 	"selectedIconPath": "static/apiHL.png",
-			// 	"text": "接口"
-			// }, {
-			// 	"pagePath": "pages/tabBar/extUI/extUI",
-			// 	"iconPath": "static/extui.png",
-			// 	"selectedIconPath": "static/extuiHL.png",
-			// 	"text": "扩展组件"
-			// }, {
-			// 	"pagePath": "pages/tabBar/template/template",
-			// 	"iconPath": "static/template.png",
-			// 	"selectedIconPath": "static/templateHL.png",
-			// 	"text": "模板"
-			// }
+			,
+			{
+				"pagePath": "pages/tabBar/component/component",
+				"iconPath": "static/component.png",
+				"selectedIconPath": "static/componentHL.png",
+				"text": "内置组件"
+			},
+			{
+				"pagePath": "pages/tabBar/API/API",
+				"iconPath": "static/api.png",
+				"selectedIconPath": "static/apiHL.png",
+				"text": "接口"
+			}, {
+				"pagePath": "pages/tabBar/extUI/extUI",
+				"iconPath": "static/extui.png",
+				"selectedIconPath": "static/extuiHL.png",
+				"text": "扩展组件"
+			}, {
+				"pagePath": "pages/tabBar/template/template",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
+				"text": "模板"
+			}
 		]
 	}
 }
